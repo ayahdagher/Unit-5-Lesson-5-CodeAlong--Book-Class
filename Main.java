@@ -42,5 +42,45 @@ class Main
     System.out.println("Are the books equal? " + b.equals(b));
     System.out.println("Are the books equal? " + b.equals(bb));
 
+// making some default books
+
+Book def1 = new Book(); 
+Book def2 = new Book(); 
+
+
+System.out.println(" ");
+
+System.out.println("This is book one: " + def1); 
+
+System.out.println(" ");
+
+System.out.println("This is book two: " + def2); 
+
+    System.out.println("Are the default books equal? " + def1.equals(def2));
+
+////////////////////////////////////////////////////////////////////////////
+
+// the library class
+
+System.out.println(" ");
+System.out.println(" ");
+
+Library lib = new Library(); 
+System.out.println(lib);
+
+//adding books to library object. the previous objects we made can interact with this class
+
+lib.addBooks(b);
+lib.addBooks(bb);
+lib.addBooks(def1);
+lib.addBooks(def2);
+lib.addBooks(b);
+lib.addBooks(bb);
+lib.addBooks(def1);
+lib.addBooks(def2);lib.addBooks(b);
+lib.addBooks(bb);
+
+System.out.println(lib);
+
   }
 }
