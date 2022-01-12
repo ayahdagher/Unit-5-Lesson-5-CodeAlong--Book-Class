@@ -20,25 +20,29 @@ public Library(String n, String a, int x)
   this.books = new Book[x] ; 
 }
 
+
 public void addBooks(Book b)
 {
 books[numBooks] = b ;
 numBooks ++ ; 
-
-/*
-if(numBooks > books.length - 1)
-{
-put stuff here
 }
 
-}
 
-public void doubleSize(Books[] b)
+public void doubleSize()
 {
 
+  Book[] temp = new Book [2*books.length]; 
+
+  for(int i = 0 ; i < books.length ; i++)
+  {
+    temp[i] = books[i] ;
+  }
+
+  books = temp ; 
+ 
 }
  
-*/
+
 
 public String toString()
 {

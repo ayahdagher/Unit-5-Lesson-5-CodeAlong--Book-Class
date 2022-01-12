@@ -70,6 +70,9 @@ System.out.println(lib);
 
 //adding books to library object. the previous objects we made can interact with this class
 
+System.out.println(" ");
+System.out.println(" ");
+
 lib.addBooks(b);
 lib.addBooks(bb);
 lib.addBooks(def1);
@@ -81,6 +84,11 @@ lib.addBooks(def2);lib.addBooks(b);
 lib.addBooks(bb);
 
 System.out.println(lib);
+
+System.out.println("Increasing size of array!");
+lib.doubleSize(); 
+System.out.println(lib);
+
 
   }
 }
